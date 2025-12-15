@@ -30,7 +30,7 @@ function App() {
         {/*  sidebar */}
           <SideBar/>
         {/* Main content */}
-        <div className='main-content flex flex-col flex-4'>
+        <div className='main-content flex flex-col flex-4 justify-between'>
           <div className='main-header flex  w-full'>
             <span>Todos os aplicativos</span>
             <ul className='flex discover'>
@@ -41,23 +41,23 @@ function App() {
             <span className='opacity-0'>Todos os aplicativos</span>
           </div>
 
-          <div className='main-body bg-(--color-background-strong) '>
+          <div className='main-body flex-2 bg-(--color-background-strong) '>
             {/* banner free trial */}
-            <div className='flex flex-1 banner w-full'>
-              <div>
-                <div>
+            <div className='flex-1 w-full'>
+              <div className='banner flex flex-col'>
+                <div className='banner-head flex items-center'>
                   <SiAdobeillustrator/>
                   <p>Adobe Illustrator</p>
                 </div>
-                <p></p>
-                <div>
-                  <button></button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div className='flex banner-btn'>
+                  <button>start Free Trial</button>
                 </div>
               </div>
             </div>
 
             {/* apps */}
-            <div className='flex flex-col gap-2'>
+            <div className='flex flex-1 flex-col gap-2'>
               <span className='title'>Instalado</span>
               
                 <ul className='content'>
