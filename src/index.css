@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+#root{
+  --color-1:rgba(0,0,0,0.3);
+  --color-2:rgba(255,255,255,0.4);
+  --color-background:rgba(0,0,0,0.3);
+  --color-background-strong: rgba(0,0,0,0.5);
+}
+body{
+  height: 100VH;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("./assets/macos-wallpaper-2.jpg")no-repeat;
+  background-size: cover;
+  font-family: "Roboto",sans-serif;
+}
