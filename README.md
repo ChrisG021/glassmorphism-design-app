@@ -9,8 +9,7 @@ O projeto utiliza **React** e conceitos modernos de **UI/UX**, com efeitos de vi
 
 > Interface com efeito glass, gradientes suaves e layout moderno.
 
-_(adicione aqui uma imagem ou gif do projeto)_
-
+![preview](image.png)
 ---
 
 ## 🚀 Tecnologias Utilizadas
