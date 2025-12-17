@@ -1,4 +1,4 @@
-import { FaBell, FaCloud, FaSearch } from "react-icons/fa";
+import { FaBars, FaBell, FaCloud, FaSearch } from "react-icons/fa";
 import './style.css';
 import the_rock2 from './../../assets/the-rock.jpg';
 import { useState } from "react";
@@ -12,7 +12,7 @@ export default function HeaderApp(){
                 <div className="circle c-g"></div>
             </div>
             
-            <div className="others">
+            <div className="others ">
                 <ul className="sections">
                     <li onClick={()=>{setSection("app")}} className={`op ${section == "app"?"active":""}`}>Apps</li>
                     <li onClick={()=>{setSection("work")}} className={`op badge ${section == "work"?"active":""}`} >Seus trabalhos</li>
@@ -20,16 +20,25 @@ export default function HeaderApp(){
                     <li onClick={()=>{setSection("store")}} className={`op badge ${section == "store"?"active":""}`}>Loja</li>
                 </ul>
 
-                <div className="flex gap-5">
+                <div className="flex lg:gap-5">
                     <div className="searchbar">
                         {/* icone e input */}
                         <FaSearch/>
-                        <input type="text" placeholder="Pesquise" />
+                        <input  type="text" placeholder="Pesquise" />
                     </div>
                     <div className="options">
                         {/*  icone notificacao cloud e perfil */}
-                        <div className="badge"><FaBell/></div>
-                        <div><FaCloud/></div>
+                        <div className="block md:hidden">
+                        <FaBars />
+                        </div>
+
+                        <div className="badge block max-md:hidden">
+                        <FaBell />
+                        </div>
+
+                        <div className="block max-md:hidden">
+                        <FaCloud />
+                        </div>
                         <div className="user-profile"><img src={the_rock2} alt="" /></div>
                     </div>
                 </div>
